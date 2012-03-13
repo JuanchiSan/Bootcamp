@@ -12,10 +12,18 @@ and open the template in the editor.
         <header>Globant Bootcamp HTML5</header>
         <article>
             <h1>5.</h1>
+            <input type="text" id="alias" name="post" autofocus>
+            <input type="button" id="boton" value="click me">
             <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
             <script>
-
+                $("boton").click(function(event){
+                    $.post("/api/dispatcher.php",{ service: 'welcome.hello', 
+                        params: {"name":""+alias+""}
+                    });
+                    event.preventDefault();
+                });
             </script>
+            
         </article>
     </body>
 </html>
