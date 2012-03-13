@@ -6,7 +6,7 @@
         <h1>Bootcamp</h1>    
     </head>
     <body>
-        <a href="http://localhost/app/day1/index.html">Day 1</a>
-    
+        <a href="http://localhost/app/day1/index.html">Day 1<br></a>
+        Day 2<br>
     </body>
 </html>
