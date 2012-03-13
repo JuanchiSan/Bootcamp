@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript" src="jquery-1.7.1.js"></script>
+        <title>Bootcamp</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
+        <h1>Bootcamp</h1>    
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <a href="http://localhost/app/day1/index.html">Day 1</a>
+    
     </body>
 </html>
