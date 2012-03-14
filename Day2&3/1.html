@@ -7,15 +7,11 @@ and open the template in the editor.
     <head>
         <title>jQuery Mobile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="js/jquery.mobile-1.0.1.css"/>
         <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
-    </head>
-    <body>
-        <header>Globant Bootcamp HTML5</header>
-        <article>
-            <h1>jQuery Mobile</h1>
-
-            <script>
+	<script src="js/jquery.mobile-1.0.1.js"></script>
+        <script>
+                $.mobile.
                 $("#boton").click(function(event){
                     event.preventDefault();                   
                     $.post("/app/api/dispatcher.php",{ 
@@ -25,11 +21,23 @@ and open the template in the editor.
                     );
                 });
                 $(document).ajaxError(function(){ $("#respuesta").css("color", "red"); })
-                            .ready(function(){alert("Finished loading");});
-            </script> 
-            <input type="text" id="alias" autofocus>
-            <input type="button" id="boton" value="click me">
-            <div id="respuesta"> Aqui va la respuesta del dispatcher</div>
-        </article>
+                           .ready(function(){alert("Finished loading");});
+        </script> 
+    </head>
+    <body>
+        <div data-role="page">
+            <header data-role="header">  
+                <h1>jQuery Mobile</h1>  
+            </header>
+            <div data-role="content">
+                <p>Hello world</p>
+                <input type="text" id="alias" autofocus >
+                <input type="button" id="boton" value="click me">
+                <div id="respuesta"> Aqui va la respuesta del dispatcher</div>
+            </div>
+            <div data-role="footer">
+                <h4>I'm the footer</h4>
+            </div>
+        </div><!-- /page -->
     </body>
 </html>
