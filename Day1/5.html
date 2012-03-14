@@ -18,10 +18,10 @@ and open the template in the editor.
             <script>
                 
                 $("#boton").click(function(event){
+                    event.preventDefault();
                     $.post("/app/api/dispatcher.php",{ service: 'welcome.hello',
                         params: {"name": ""+$("#alias").val()+""}
                     });
-                    event.preventDefault();
                 });
             </script>
             

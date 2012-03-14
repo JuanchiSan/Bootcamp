@@ -17,12 +17,12 @@ and open the template in the editor.
             <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
             <script>
                 $("#boton").click(function(event){
+                    event.preventDefault();                      
                     $.post("/app/api/dispatcher.php",{ 
                         service: 'welcome.hello',
                         params: {"name": ""+$("#alias").val()+""}},
                         function(data){$("#respuesta").html(data);}
-                    );
-                    event.preventDefault();                   
+                    );                 
                 });
                 $(document).ajaxError(function(){ $("#respuesta").css("color", "red"); });               
             </script> 

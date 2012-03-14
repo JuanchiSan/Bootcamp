@@ -17,6 +17,7 @@
             <a href="http://localhost/app/day1/7.html"><b>Practice 7</b><br></a>
             
          <h2>Day 2<br></h2>
+            <a href="http://localhost/app/day2&3/1.html">Practice 1<br></a>
     </article>
     </body>
 </html>

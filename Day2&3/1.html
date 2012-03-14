@@ -1,0 +1,35 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+    </head>
+    <body>
+        <header>Globant Bootcamp HTML5</header>
+        <article>
+            <h1>jQuery Mobile</h1>
+
+            <script>
+                $("#boton").click(function(event){
+                    event.preventDefault();                   
+                    $.post("/app/api/dispatcher.php",{ 
+                        service: 'welcome.hello',
+                        params: {"name": ""+$("#alias").val()+""}},
+                        function(data){$("#respuesta").html(data);}
+                    );
+                });
+                $(document).ajaxError(function(){ $("#respuesta").css("color", "red"); })
+                            .ready(function(){alert("Finished loading");});
+            </script> 
+            <input type="text" id="alias" autofocus>
+            <input type="button" id="boton" value="click me">
+            <div id="respuesta"> Aqui va la respuesta del dispatcher</div>
+        </article>
+    </body>
+</html>
