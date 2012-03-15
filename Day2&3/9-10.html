@@ -42,22 +42,30 @@
 		</div>
 	</div>	
 	<div data-role="page" id="page3">
-
 		<div data-role="header">
                     <a href="#page2" class="ui-btn-left">Back</a>
-			<h1>JQuery Mobile: third page</h1>
-		</div>
-
+                    <h1>JQuery Mobile: third page</h1>
+                </div>
 		<div data-role="content">
-			<p>This is the main content of the page</p>
-                        <p>You can go back, <a href="#mypage">clicking here</a>
+                    <a href="#alert" data-rel="dialog" data-role="button" data-transition="pop">Open dialog</a>
+	
+                    <p>This is the main content of the page</p>
+                    <p>You can go back, <a href="#mypage">clicking here</a>
 		</div>
-
 		<div data-role="footer">
 			<h4>I'm the footer</h4>
 		</div>
-		
 	</div>
+        
+        <div data-role="page" id="alert">
+            <div data-role="header">
+                <p>Dialog Alert</p>			
+            </div>
+            <div data-role="content">
+		<p>This is a DIALOG</p>
+            </div>
+        </div>
+        
         <script type="text/javascript" src="js/scripts6.js"></script>
     </body>
 </html>
