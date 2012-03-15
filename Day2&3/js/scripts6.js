@@ -8,8 +8,8 @@ $("#boton").click(function(){
             params: {"name": ""+$("#alias").val()+""}},
             function(data){$("#respuesta").html(data);
     });
-    $.keypress(function(e){
-        if(e.keyCode == KEYCODE_ESC){
+    $(document).keyup(function(e){
+        if(e.keyCode == 27){
             $.mobile.hidePageLoadingMsg();
         }
     })
