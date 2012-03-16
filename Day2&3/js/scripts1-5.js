@@ -1,4 +1,4 @@
-$("#mypage").live('pageinit', function(){
+$("#mypage").on('pageinit', function(){
      alert("Finished loading");
 });
 $("#boton").click(function(){   

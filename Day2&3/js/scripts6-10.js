@@ -1,4 +1,4 @@
-$("#mypage").live('pageinit', function(){
+$("#mypage").on('pageinit', function(){
      alert("Finished loading");
 });
 $("#boton").click(function(){   
@@ -12,6 +12,7 @@ $("#boton").click(function(){
         if(e.keyCode == 27){
             $.mobile.hidePageLoadingMsg();
         }
-    })
+    });
+    
 });
  
