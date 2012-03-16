@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>8</title>
+        <title>9</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
     </head>
     <body>
         <header>Globant Bootcamp HTML5</header>
         <article>
-            <h1>8.</h1>
+            <h1>9.</h1>
             <input type="text" id="alias" autofocus>
-            <input type="button" id="boton" value="click me">
+          <input type="button" id="boton" value="click me">
             <div id="respuesta"> Aqui va la respuesta del dispatcher</div>
-            <script>               
+            <div id="movielist" align="center"> 
+            </div>
+          <script>               
                 $("#boton").click(function(event){
                     event.preventDefault();
                     var param=$("#alias").val();
-                    if(param=="juan"){param=param.fontcolor("ligtblue");}            
+                    if(param=="juan"){param=param.fontcolor("ligtblue");}
                     $.post("/app/api/dispatcher.php",{ 
                         service: 'welcome.hello',
                         params: {"name": ""+param+""}},
                         function(data){$("#respuesta").html(data);
                     });                 
                 });
-                $(document).ajaxError(function(){ $("#respuesta").css("color", "red"); });                
+                $(document).ajaxError(function(){ $("#respuesta").css("color", "red"); });
+                var obj;
+                $.get("/app/api/dispatcher.php",{service: 'movie.getTop', params:"movies"},
+                    function(data){obj=$.parseJSON(data)});
+                    $("#movielist").html(obj);
+                    
+// "media_src","content_type":"image\/jpeg","Name","ReleaseYear","Synopsis"
             </script> 
         </article>
     </body>

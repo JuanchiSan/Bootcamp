@@ -15,7 +15,9 @@
             <a href="http://localhost/app/day1/5.html"><b>Practice 5</b><br></a>
             <a href="http://localhost/app/day1/6.html"><b>Practice 6</b><br></a>
             <a href="http://localhost/app/day1/7.html"><b>Practice 7</b><br></a>
-            
+            <a href="http://localhost/app/day1/8.html"><b>Practice 8</b><br></a>
+            <a href="http://localhost/app/day1/9.html"><b>Practice 9</b><br></a>
+            <a href="http://localhost/app/day1/10.html"><b>Practice 10</b><br></a>
          <h2>Day 2<br></h2>
             <a href="http://localhost/app/day2&3/1-5.html">Practice 1-5<br></a>
             <a href="http://localhost/app/day2&3/6-8.html">Practice 6-8<br></a>
