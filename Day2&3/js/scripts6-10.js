@@ -13,6 +13,4 @@ $("#boton").click(function(){
             $.mobile.hidePageLoadingMsg();
         }
     });
-    
 });
- 

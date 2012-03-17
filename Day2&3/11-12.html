@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="js/jquery.mobile-1.0.1.css"/>
+        <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+	<script src="js/jquery.mobile-1.0.1.js"></script> 
+    </head>
+    <body>
+        <div data-role="page" id="mypage">
+            <header data-role="header">  
+                <a href="/app/index.php" class="ui-btn-left">Back</a>
+                <h1>jQuery Mobile</h1> 
+                <a href="#page2" class="ui-btn-rigth">Next</a>
+            </header>
+            <div data-role="content">
+                <h1><b>Practice 6-7<br></b></h1>
+                <p>You can go to the <a href="#page2">Second page</a>.<br></p>
+                <p>Or <a href="#page3">Third page</a>.</p>
+                <input type="text" id="alias" autofocus >
+                <input type="button" id="boton" value="click me">
+                <div id="respuesta"> Dispatcher response </div>
+            </div>
+            <div data-role="footer">
+                <h4>I'm the footer</h4>
+            </div>
+        </div>
+        <div data-role="page" id="page2">
+		<div data-role="header">
+                    <a href="#mypage" class="ui-btn-left">Back</a>
+                    <h1>JQuery Mobile: Second Page</h1>
+                    <a href="#page3" class="ui-btn-rigth">Next</a>
+		</div>
+		<div data-role="content">
+                    <h2>Lista de peliculas</h2>
+                    <ul data-role="listview" data-theme="c" id="movielist"></ul>
+                        
+                    <p><br>You can go to the <a href="#page3">third page</a>.</p>
+                        <p>Or back to <a href="#mypage">First page</a>.</p>
+		</div>
+		<div data-role="footer">
+			<h4>I'm the footer</h4>
+		</div>
+	</div>	
+	<div data-role="page" id="page3">
+		<div data-role="header">
+                    <a href="#page2" class="ui-btn-left">Back</a>
+                    <h1>JQuery Mobile: third page</h1>
+                    <a href="#page4" class="ui-btn-rigth">Next</a>
+                </div>
+		<div data-role="content">
+                    <a href="#alert" data-rel="dialog" data-role="button" data-transition="pop">Open dialog</a>
+	
+                    <p>This is the main content of the page</p>
+                    <p>You can go back, <a href="#mypage">clicking here</a>
+		</div>
+		<div data-role="footer">
+			<h4>I'm the footer</h4>
+		</div>
+	</div>
+        <div data-role="page" id="page4">
+		<div data-role="header">
+                    <a href="#page3" class="ui-btn-left">Back</a>
+                    <h1>JQuery Mobile: fourth page</h1>
+                </div>
+		<div data-role="content">
+                    <a href="/app/pages/sample1.php" data-ajax="false">Go to Sample1</a>  
+		</div>
+		<div data-role="footer">
+			<h4>I'm the footer</h4>
+		</div>
+	</div>
+
+        <div data-role="page" id="alert">
+            <div data-role="header">
+                <p>Dialog Alert</p>			
+            </div>
+            <div data-role="content">
+		<p>This is a DIALOG</p>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="js/scripts11-12.js"></script>
+    </body>
+</html>
