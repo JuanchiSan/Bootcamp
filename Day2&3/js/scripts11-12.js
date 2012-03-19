@@ -16,23 +16,22 @@ $("#boton").click(function(){
         }
     });
 });
+
 $(document).ajaxError(function(){ $("#respuesta").css("color", "red"); });                
-$.ajax(url, {type: 'POST',crossDomain: 'true',
+$.ajax(url, {type: 'GET',crossDomain: 'true',
     data: {service: 'movie.getTop', params: {'name': 'null'}}, 
     dataType: 'json', success: function(data) {
-        var obj = data;
-        var lista= "<li><img src='"+obj[0].BoxArt.SmallUrl+"' />"+
-                "<h3><b>"+obj[0].Name+"</b></h3> ("+obj[0].ReleaseYear+")"+
-                "<p>"+obj[0].Synopsis+"</p>"+"</li>";
-            //"<li>Lista de peliculas<ul>";
-        var i = 1;
-        while (obj[i]!= null) {                   
-            lista += "<li><img src='"+obj[i].BoxArt.SmallUrl+"' />"+
-                "<h3><b>"+obj[i].Name+"</b></h3> ("+obj[i].ReleaseYear+")"+
-                "<p>"+obj[i].Synopsis+"</p>"+"</li>";
-            ++i;
-        }
-      //  lista +="</ul></li>";
-        $("#movielist").html(lista);
-    }});
+    
+    var obj = data;
+    var lista= "<li><img src='"+obj[0].BoxArt.SmallUrl+"' />"+
+        "<h3><b>"+obj[0].Name+"</b>("+obj[0].ReleaseYear+")</h3>"+
+        "<p>"+obj[0].Synopsis+"</p>"+"</li>";
+    var i = 1;
+    while (obj[i]!= null) {                   
+        lista += "<li><img src='"+obj[i].BoxArt.SmallUrl+"' />"+
+        "<h3><b>"+obj[0].Name+"</b>("+obj[0].ReleaseYear+")</h3>"+
+        "<p>"+obj[i].Synopsis+"</p>"+"</li>";
+        ++i;}
+   $("#movielist").html(lista);
+}}); 
 
