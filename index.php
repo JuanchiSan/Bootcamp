@@ -19,12 +19,12 @@
             <a href="http://localhost/app/day1/9.html"><b>Practice 9</b><br></a>
             <a href="http://localhost/app/day1/10.html"><b>Practice 10</b><br></a>
          <h2>Day 2 & 3: jQuery Mobile<br></h2>
-            <a href="http://localhost/app/day2&3/1-5.html">Practice 1-5<br></a>
-            <a href="http://localhost/app/day2&3/6-8.html">Practice 6-8<br></a>
-            <a href="http://localhost/app/day2&3/9-10.html">Practice 9-10<br></a>
-            <a href="http://localhost/app/day2&3/11-12.html">Practice 11-12<br></a>
+            <a href="http://localhost/app/day2-3/1-5.html">Practice 1-5<br></a>
+            <a href="http://localhost/app/day2-3/6-8.html">Practice 6-8<br></a>
+            <a href="http://localhost/app/day2-3/9-10.html">Practice 9-10<br></a>
+            <a href="http://localhost/app/day2-3/11-12.html">Practice 11-12<br></a>
          <h2>Day 4, 5 & 6: Design Patterns and OOP in Javascript<br></h2>
-            <a href="http://localhost/app/day4-6/1.html">Practice 1<br></a>
+            <a href="http://localhost/app/day4-6/01-05.html">Practice 1-5<br></a>
     </article>
     </body>
 </html>

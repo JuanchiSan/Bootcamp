@@ -15,8 +15,7 @@ and open the template in the editor.
             <h1>5.</h1>
             <input type="text" id="alias" autofocus>
             <input type="button" id="boton" value="click me">
-            <script>
-                
+            <script>               
                 $("#boton").click(function(event){
                     event.preventDefault();
                     $.post("/app/api/dispatcher.php",{ service: 'welcome.hello',
