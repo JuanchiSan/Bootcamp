@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>9</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="/Bootcamp/js/jquery-1.7.1.js"></script>
+    </head>
+    <body>
+        <header>Globant Bootcamp HTML5</header>
+        <article>
+            <h1>9.</h1>
+            <input type="text" id="alias" autofocus>
+          <input type="button" id="boton" value="click me">
+            <div id="respuesta"> Aqui va la respuesta del dispatcher</div>
+            <div id="movielist" align="center" style="background-color:LightGrey ;"></div>
+          <script>
+              var url="/Bootcamp/api/dispatcher.php";
+                $("#boton").click(function(event){
+                    event.preventDefault();
+                    var param=$("#alias").val();
+                    if(param=="juan"){param=param.fontcolor("ligtblue");}
+                    $.post(url,{ service: 'welcome.hello',
+                        params: {"name": ""+param+""}},
+                        function(data){$("#respuesta").html(data);
+                    });                 
+                });
+                $(document).ajaxError(function(){ $("#respuesta").css("color", "red"); });                
+                $.ajax(url, {type: 'POST',crossDomain: 'true',
+                    data: {service: 'movie.getTop', params: {'name': 'null'}}, 
+                    dataType: 'json', success: function(data) {
+                        var obj = data;
+                        var lista = '<h2>Lista de películas</h2>';
+                        var i = 0;
+                        while (obj[i]!= null) {                   
+                            lista += "<div><b>"+obj[i].Name+"</b> ("+obj[i].ReleaseYear+")";
+                            lista += "<h2><img src='"+obj[i].BoxArt.SmallUrl+"' /></h2>";
+                            lista += "<p>"+obj[i].Synopsis+"</p></div>";
+                            ++i;
+                        }
+                        $("#movielist").html(lista);
+                    }});
+            </script> 
+        </article>
+    </body>
+</html>
