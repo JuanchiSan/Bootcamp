@@ -13,7 +13,7 @@
 //    this.play = function(){$.publish("movies", ["play",this]);}
 //    this.stop = function(){$.publish("movies", ["stop",this]);}
 //}
-var Movie = function (_title, _rating,_id){
+var Movie = (function (_title, _rating,_id){
     var title = _title;
     var rating = _rating;
     var id = _id;
@@ -25,7 +25,8 @@ var Movie = function (_title, _rating,_id){
     this.getId = function(){return this.id;}
     this.play = function(){$.publish("movies", ["play",this]);}
     this.stop = function(){$.publish("movies", ["stop",this]);}
-}
+});
+
 function MovieObserver(){
     $.subscribe("movies", function(state, movie){
         if (state == "play"){
