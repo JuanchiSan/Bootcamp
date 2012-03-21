@@ -24,7 +24,7 @@
             <a href="http://localhost/Bootcamp/day2-3/9-10.html">Practice 9-10<br></a>
             <a href="http://localhost/Bootcamp/day2-3/11-12.html">Practice 11-12<br></a>
          <h2>Day 4, 5 & 6: Design Patterns and OOP in Javascript<br></h2>
-            <a href="http://localhost/Bootcamp/day4-6/01-05.html">Practice 1-5<br></a>
+            <a href="http://localhost/Bootcamp/day4-6/index.html">Practice 1-10<br></a>
     </article>
     </body>
 </html>
