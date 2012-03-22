@@ -31,12 +31,11 @@ var MovieDownloader = (function(){
 })();
 
 // 10
-var SocialMixin = function(){};
-SocialMixin.prototype = {
-    share: function(friendName){
+function SocialMixin(){
+    this.share=function(friendName){
         console.log('Sharing '+this.getTitle() +' with '+ friendName);
-    },
-    like: function(){
+    };
+    this.like=function(){
         console.log('like ++');
-    }
+    };
 };
