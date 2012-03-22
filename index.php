@@ -25,6 +25,8 @@
             <a href="http://localhost/Bootcamp/day2-3/11-12.html">Practice 11-12<br></a>
          <h2>Day 4, 5 & 6: Design Patterns and OOP in Javascript<br></h2>
             <a href="http://localhost/Bootcamp/day4-6/index.html">Practice 1-10<br></a>
+         <h2>Day 7: AMD + RequireJS<br></h2>
+            <a href="http://localhost/Bootcamp/day7/index.php">Practice 1-10<br></a>    
     </article>
     </body>
 </html>
