@@ -7,10 +7,9 @@
     <head>
         <meta charset="utf-8">
         <title><?php echo "$title: $subtitle"; ?></title>
-  
-        <link href="/Bootcamp/js/default.css" rel="stylesheet" />
-        <script type="text/javascript" src="/Bootcamp/js/jquery-1.7.1.js"></script>
-        <script data-main="scripts/main" src="scripts/require-jquery.js"></script>
+        <link rel="stylesheet" href="/Bootcamp/js/jquery.mobile-1.0.1.css"/>
+        
+        <script data-main="scripts/main" src="scripts/require.js"></script>
               
     </head>
     <body>
