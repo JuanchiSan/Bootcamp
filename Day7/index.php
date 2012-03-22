@@ -8,11 +8,9 @@
         
         <meta charset="utf-8">
         <title><?php echo "$title: $subtitle"; ?></title>
-        <link rel="stylesheet" href="/Bootcamp/js/jquery.mobile-1.0.1.css"/>
-        
+        <link rel="stylesheet" href="/Bootcamp/js/jquery.mobile-1.0.1.css"/>      
         <script data-main="scripts/main" src="scripts/require.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
     </head>
     <body>
         <header>

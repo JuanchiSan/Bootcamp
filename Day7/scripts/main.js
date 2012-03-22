@@ -7,7 +7,9 @@ require.config({
 
 require(["modules/director", "modules/movie", "jquery", "jqmobile"], function(Director, Movie) {
                 var movie = new Movie ("Alien",8, 123);
-                var RidleyScott = new Director("Ridley Scott", ["Cast is everything.", "Do what you haven't..."]); 
+                console.log(movie.getTitle());
+                var quotes =["Cast is everything.", "Do what you haven't..."];
+                var RidleyScott = new Director("Ridley Scott",quotes ); 
                 movie.setDirector(RidleyScott);
                 movie.getDirector().speak();
             });

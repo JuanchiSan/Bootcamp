@@ -24,9 +24,9 @@ function Movie (_title, _rating,_id){
     this.getRating = function(){return this.rating;};
     this.setId = function(_id){this.id = _id;};
     this.getId = function(){return this.id;};
-    this.play = function(){$.publish("movies", ["play",this]);};
-    this.stop = function(){$.publish("movies", ["stop",this]);};
 }
+    Movie.prototype.play = function(){$.publish("movies", ["play",this]);};
+    Movie.prototype.stop = function(){$.publish("movies", ["stop",this]);};
 
 function MovieObserver(){
     $.subscribe("movies", function(state, movie){
