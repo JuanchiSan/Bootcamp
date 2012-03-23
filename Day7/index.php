@@ -33,7 +33,7 @@
         </footer>
         <div data-role="page" id="alert">
             <div data-role="header">
-                <p id="Director"></p>
+                <h1 id="Director"></h1>
             </div>
             <div data-role="content">
 		<p id="Quotes"></p>
