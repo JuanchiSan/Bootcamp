@@ -13,10 +13,10 @@ define(["./Director"],function(Director) {
         this.getRating = function(){return rating;};
         this.setId = function(_id){id = _id;};
         this.getId = function(){return id;};
-        
+        this.setDirector = function(_director) { director = _director;};
+        this.getDirector = function() { return director; };
     }
-    Movie.prototype.setDirector = function(_director) { this.director = _director;};
-    Movie.prototype.getDirector = function() { return this.director; };
+
     Movie.prototype.play = function(){
         //$.publish("movies", ["play",this]);
         console.log("Playing "+this.getTitle()+"...");
