@@ -26,7 +26,10 @@
          <h2>Day 4, 5 & 6: Design Patterns and OOP in Javascript<br></h2>
             <a href="http://localhost/Bootcamp/day4-6/index.html">Practice 1-10<br></a>
          <h2>Day 7: AMD + RequireJS<br></h2>
-            <a href="http://localhost/Bootcamp/day7/index.php">Practice 1-10<br></a>    
+            <a href="http://localhost/Bootcamp/day7/index.php">Practice 1-8<br></a>
+         <h2>Day 8: Template Engines<br></h2>
+            <a href="http://localhost/Bootcamp/day8/index.php">Practice 1-7<br></a>
+            
     </article>
     </body>
 </html>

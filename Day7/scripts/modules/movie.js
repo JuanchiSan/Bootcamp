@@ -5,15 +5,17 @@ define(["./Director"],function(Director) {
         var rating = _rating;
         var id = _id;
         var director;
+        //return (this);
         //Protected methods
-        this.setTitle = function(_title){this.title = _title;};
-        this.getTitle = function(){return this.title;};
-        this.setRating = function(_rating){this.rating = _rating;};
-        this.getRating = function(){return this.rating;};
-        this.setId = function(_id){this.id = _id;};
-        this.getId = function(){return this.id;};
-        this.setDirector = function(_director) { this.director = _director;};
+        this.setTitle = function(_title){title = _title;};
+        this.getTitle = function(){return title;};
+        this.setRating = function(_rating){rating = _rating;};
+        this.getRating = function(){return rating;};
+        this.setId = function(_id){id = _id;};
+        this.getId = function(){return id;};
+        
     }
+    Movie.prototype.setDirector = function(_director) { this.director = _director;};
     Movie.prototype.getDirector = function() { return this.director; };
     Movie.prototype.play = function(){
         //$.publish("movies", ["play",this]);
