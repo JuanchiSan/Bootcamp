@@ -1,0 +1,33 @@
+var data = 
+    {   
+    Sections: {
+            name : 'Juan Ignacio Saenz',
+            address : 'Lamadrid 553',
+            telephone : '02293 435202',
+            cellphone : '02293 15571815', 
+            email : 'saenztandil@gmail.com',   
+            dateBirth : '05/11/1981',
+            placeBirth : 'Mar del Plata',
+            citizen : 'Argentina',
+            sex : 'male'
+    },
+    HSections : {
+        Companies : [
+            {   Company : 'Biblioteca Popular Bernardino Rivadavia',
+                rol : 'Administrative',
+                period : '2006-2009'
+            }
+        ],
+        Education : [
+            {   Institution : 'UNICEN',
+                degree : 'Analista Programador Universitario',
+                Eperiod : '2011'
+            },
+            {   Institution : 'colegio Carlos Saavedra Lamas - MDP',
+                degree : 'Bachiller',
+                Eperiod : '1999'
+            }
+        ],
+        Certifications : false
+    }
+};      

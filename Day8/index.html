@@ -3,8 +3,43 @@
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="/Bootcamp/js/jquery.mobile-1.0.1.css"/> 
+        <script type="text/javascript" src="/Bootcamp/js/jquery-1.7.1.js"></script>
+        <script src="/Bootcamp/js/jquery.mobile-1.0.1.js"></script> 
+        <script src="Scripts/js/mustache.js" type="text/javascript"></script>
+        <script src="Scripts/js/underscore.js" type="text/javascript"></script>
+        <script src="Scripts/js/smart-2.7.min.js" type="text/javascript"></script>
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body> 
+        <div data-role='page' id='page1'>
+        <header data-role='header'>
+            <a href="/Bootcamp/index.php" class="ui-btn-left">Back</a>
+            <h3>CONTACT INFORMATION</h3>
+            <h4>with Mustache.js</h4>
+            <a href="#page2" class="ui-btn-rigth">Next</a>
+        </header> 
+        <div data-role='content' id="template1"></div>
+    </div>
+    <div data-role='page' id='page2'>
+        <header data-role='header'>
+            <a href="#page1" class="ui-btn-left">Back</a>
+            <h3>CONTACT INFORMATION</h3>
+            <h4>with underscore.js</h4>
+            <a href="#page3" class="ui-btn-rigth">Next</a>      
+        </header>
+        <div data-role='content'id="template2"></div>
+    </div>
+    <div data-role='page' id='page3'>
+        <header data-role='header'>
+            <a href="#page2" class="ui-btn-left">Back</a>
+            <h3>CONTACT INFORMATION</h3>
+            <h4>with jsamrt.js</h4>
+            <a href="#page1" class="ui-btn-rigth">Next</a>      
+        </header>
+        <div data-role='content'id="template3"></div>
+    </div>
+        <script language="javascript" src="Scripts/main.js"></script>
+        <script language="javascript" src="Scripts/Profile.json"></script>
     </body>
 </html>
