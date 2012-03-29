@@ -40,23 +40,24 @@ $(function(){
 
         // The DOM events specific to an item.
         events: {
-        "click .delbtt"             : "remove",
-        "click .detbtt"            : "details"
-        
+        "click .delbtt"     : "remove",
+        "click .detbtt"     : "details",
+        "click .editbtt"    : "edit",
+        'keypress #editMovie': 'editOnEnter'
         },
 
         initialize: function() {      
             this.model.bind('change', this.render, this);
-            _.bindAll(this,'remove','details');
-            this.model.bind('remove',this.unrender,this);
-            
+            _.bindAll(this,'remove','details', 'edit');
+            this.model.bind('remove',this.unrender,this);           
         },
         
-        render: function(){
-            var newTitle= "<li>"+this.model.get("title")+"  ";
-            var Delbtt= "<span><input type='button' value='Delete' class='delbtt'></input></span>";
-            var Detbtt= "<span><input type='button' value='Details' class='detbtt'></input></span></li>";
-            $(this.el).html(newTitle + Delbtt + Detbtt);
+        render: function(){          
+            var newTitle = "<li>"+this.model.get("title");
+            var Editbtt = "<span><input type='button' value='Edit' class='editbtt'></input><span>"
+            var Delbtt = "<span><input type='button' value='Delete' class='delbtt'></input></span>";
+            var Detbtt = "<span><input type='button' value='Details' class='detbtt'></input></span></li>";
+            $(this.el).html(newTitle + Editbtt + Delbtt + Detbtt);
             return this;
 	},
         
@@ -74,6 +75,19 @@ $(function(){
             var syno=this.model.get("Synopsis");
             var details="<p><b>"+_title+"</b>("+year+")</p><p>"+syno+"</p>";
             $("#detailsMovies").html(details);
+        },
+        
+        edit: function(){
+            
+            this.$el.html("<input type='text' id='editMovie'></input>");
+            $("#editMovie").focus();
+        },
+        
+        editOnEnter: function(e){
+            if (e.keyCode != 13) return; 
+            if (!$("#editMovie").val()) return;
+            var newValue=$("#editMovie").val();
+            this.model.set({ title: newValue });
         }
     });   
     
@@ -95,7 +109,7 @@ $(function(){
             if (e.keyCode != 13) return; 
             if (!$("#new-movie").val()) return;
             var mov= new Movie;
-            mov.set({ title: $("#new-movie").val() });
+            mov.set({title: $("#new-movie").val()});
             this.collection.add(mov); 
             $("#new-movie").val('');
         },
@@ -106,7 +120,7 @@ $(function(){
         }
     }); 
     
-    var app = new AppView({ el : $("#create-list")});  
+    var app = new AppView({el : $("#create-list")});  
 });
 
 
