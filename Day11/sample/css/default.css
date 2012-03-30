@@ -1,0 +1,130 @@
+/* 
+    Document   : default
+    Created on : DATE
+    Author     : YOU <your@email>
+    Description:
+        CSS3 playground
+*/
+body{
+    background:#efefef;
+/*    width:300px;*/
+    margin:0 auto;
+    padding:10px;
+    border:3px solid #2489ce;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -o-border-radius:10px;
+}
+header {
+/*	width: 100%;*/
+	height: 100px;
+/*	position: static;*/
+        overflow: hidden;
+}
+header #logo img {
+    width: 120px;
+/*    position: static;*/
+    left: 20px;
+    top: 25px;
+    float: left;
+    padding-left: 5px;    
+}
+header h1 {
+    font-family:Verdana;
+    text-shadow: 0 1px #aec7d5;
+    text-decoration: none;
+    text-align: center;
+    text-height: auto;
+    padding: 0 0 15px;
+    font-size: 30px;
+/*    text-transform:uppercase;*/
+}
+nav {
+    font-family:Verdana;
+    width:420px;
+    margin:0 auto;
+    padding: 2px 2px;
+    border: 1px solid #aaaaaa;
+    border-bottom:3px solid #2489ce;
+    -moz-border-radius:10px 10px 0 0;
+    -webkit-border-radius:10px 10px 0 0;
+    border-radius:10px 10px 0 0;
+}
+#menu {
+    list-style-type: none;
+}
+#menu li{
+    display: inline;
+    margin-right:-4px;
+    list-style-type:none;
+}
+#menu li a {    
+    text-decoration: none;
+    font-weight: normal;
+    border-right: 1.5px solid #6f6f6f;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #4c4c4c;
+    text-shadow: 0 1px #dbdbdb;
+}
+#menu li:last-child a {
+    border-right: none;
+}
+#menu li a.active,
+#menu li a:hover {
+    font-weight: bold;
+    background: rgba( 0, 97, 137, 0.2);
+    padding: 10px 20px;
+    text-shadow: 0 1px #aec7d5;
+    border: 2px solid rgba(43, 97, 119, 0.2);
+    border-top: none;
+    border-bottom: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+article  p{
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    text-align: justify;
+}
+.hiThree {
+    background-color: #ddf0f8;
+}
+.hiOne {
+    background-color: #aec7d5;
+}
+.hiTwo {
+    background-color: #ccffff;
+}
+span[class^=”hi”] {
+    background-color: #14ffff;
+}
+span[class$=”One”] {
+    background-color: #148aff;
+}
+/*Por el fondo que elegi #efefef y queda eliminados los otros colores*/
+span[class$=”Two”],span[class$=”Three”]{
+    background-color: #efefef; 
+}
+header a:first-child, a:nth-child(2){
+    color: #cb2027;
+}
+article {
+    -moz-box-shadow: 10px 10px 10px #888; /* Firefox */
+    -webkit-box-shadow: 10px 10px 10px #888; /* Safari, Chrome */
+    box-shadow: 10px 10px 10px #888; /* CSS3 */
+}
+aside {
+    padding-top: 20px;
+    -moz-transform: rotate(4deg); /* FF3.5+ */
+    -o-transform: rotate(4deg); /* Opera 10.5 */
+    -webkit-transform: rotate(4deg); /* Saf3.1+, Chrome */
+    -ms-transform: rotate(4deg); /* IE9 */
+}
+video {
+   background-color: #000;   
+}
