@@ -1,22 +1,18 @@
 define(["./Director"],function(Director) {
     function Movie (_title, _rating,_id){
-        //Private var
-        var title = _title;
-        var rating = _rating;
-        var id = _id;
-        var director;
-        //return (this);
-        //Protected methods
-        this.setTitle = function(_title){title = _title;};
-        this.getTitle = function(){return title;};
-        this.setRating = function(_rating){rating = _rating;};
-        this.getRating = function(){return rating;};
-        this.setId = function(_id){id = _id;};
-        this.getId = function(){return id;};
-        this.setDirector = function(_director) { director = _director;};
-        this.getDirector = function() { return director; };
+        this.title = _title;
+        this.rating = _rating;
+        this.id = _id;
+        this.director;
     }
-
+    Movie.prototype.setTitle = function(_title){title = _title;};
+    Movie.prototype.getTitle = function(){return title;};
+    Movie.prototype.setRating = function(_rating){rating = _rating;};
+    Movie.prototype.getRating = function(){return rating;};
+    Movie.prototype.setId = function(_id){id = _id;};
+    Movie.prototype.getId = function(){return id;};
+    Movie.prototype.setDirector = function(_director) { director = _director;};
+    Movie.prototype.getDirector = function() { return director; };
     Movie.prototype.play = function(){
         //$.publish("movies", ["play",this]);
         console.log("Playing "+this.getTitle()+"...");
