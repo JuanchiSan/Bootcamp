@@ -1,23 +1,23 @@
 var data = {   
-            "Sections": {
-                    "name" : 'Juan Ignacio Saenz',
-                    "address" : 'Lamadrid 553',
-                    "telephone" : '02293 435202',
-                    "cellphone" : '02293 15571815', 
-                    "email" : 'saenztandil@gmail.com',   
-                    "dateBirth" : '05/11/1981',
-                    "placeBirth" : 'Mar del Plata',
-                    "citizen" : 'Argentina',
-                    "sex" : 'male',
-                    "Education" : [
-                    {   "einstitution" : 'UNICEN',
-                        "edegree" : 'Analista Programador Universitario',
-                        "eperiod" : '2011'
-                    },
-                    {   "einstitution" : 'colegio Carlos Saavedra Lamas - MDP',
-                        "edegree" : 'Bachiller',
-                        "eperiod" : '1999'
-                    }
-                ]
-            }
-        };      
+    "Sections": {
+        "name" : 'Juan Ignacio Saenz',
+        "address" : 'Lamadrid 553',
+        "telephone" : '02293 435202',
+        "cellphone" : '02293 15571815', 
+        "email" : 'saenztandil@gmail.com',   
+        "dateBirth" : '05/11/1981',
+        "placeBirth" : 'Mar del Plata',
+        "citizen" : 'Argentina',
+        "sex" : 'male',
+        "Education" : [
+           {"einstitution" : 'UNICEN',
+            "edegree" : 'Analista Programador Universitario',
+            "eperiod" : '2011'
+           },
+           {"einstitution" : 'colegio Carlos Saavedra Lamas - MDP',
+            "edegree" : 'Bachiller',
+            "eperiod" : '1999'
+           }
+        ]
+    }
+};      
