@@ -8,9 +8,9 @@ $("#boton").click(function(){
             params: {"name": ""+$("#alias").val()+""}},
             function(data){$("#respuesta").html(data);
     });
-    $(document).keyup(function(e){
+    
+}).keyup(function(e){
         if(e.keyCode == 27){
             $.mobile.hidePageLoadingMsg();
         }
     });
-});
