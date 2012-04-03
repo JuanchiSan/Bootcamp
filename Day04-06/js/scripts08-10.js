@@ -31,11 +31,22 @@ var MovieDownloader = (function(){
 })();
 
 // 10
-function SocialMixin(){
-    this.share=function(friendName){
+var SocialMixin = function(){};
+
+SocialMixin.prototype = {
+    share : function(friendName){
         console.log('Sharing '+this.getTitle() +' with '+ friendName);
-    };
-    this.like=function(){
+    },
+    like : function(){
         console.log('like ++');
-    };
+    }
 };
+
+Movie.prototype['share'] = SocialMixin.prototype['share'];
+Movie.prototype['like'] = SocialMixin.prototype['like'];
+
+//11
+var ironman2 = new Movie();
+ironman2.setTitle('Iron-Man 2');
+ironman2.like();
+ironman2.share('pepe');
