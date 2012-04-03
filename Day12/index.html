@@ -1,0 +1,38 @@
+<?php 
+    $title = "HTML5 Practice";
+    $subtitle = "Topic 8";
+?>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title><?php echo "$title: $subtitle"; ?></title>
+        <link href="css/default.css" rel="stylesheet" />
+        <script type="text/javascript" src="../js/jquery-1.7.1.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <h1><?php echo "<span class='title'>$title</span>: <span class='subtitle'>$subtitle</span>"; ?></h1>
+        </header>
+        <section>
+            <div id="jscode">
+                <h3>Javascript Code Place:</h3>
+                <textarea id="codePlace" cols="50" rows="20" contenteditable="true" draggable="auto" placeholder="Type your magic code.."></textarea>
+                <div id="ex1">
+                    <input type="button" id="runCode" value="run" onclick="eval(document.getElementById('codePlace').textContent);">
+                    <p>Press this button for run the code.</p>
+                </div>
+                <div id="ex2">
+                    <input type="button" id="saveCode" value="save">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div><?php echo $title; ?> v1.0</div>
+            <div>@author Alberto Miranda <a href="mailto:alberto@nextive.com">&lt;alberto@nextive.com&gt;</a></div>
+            <div>@author Esteban Abait <a href="mailto:esteban.abait@nextive.com">&lt;esteban.abait@nextive.com&gt;</a></div>
+        </footer>
+        <script type="text/javascript" src="js/default.js"></script>
+    </body>
+</html>

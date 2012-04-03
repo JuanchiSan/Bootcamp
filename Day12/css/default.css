@@ -5,94 +5,113 @@
     Description:
         Default styles for HTML Tests
 */
-
 @font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Arvo'), url('http://themes.googleusercontent.com/font?kit=vvWPwz-PlZEwjOOIKqoZzA') format('truetype');
+	font-family: Arvo;
+	font-style: normal;
+	font-weight: 400;
+	src: local(Arvo), url(http://themes.googleusercontent.com/font?kit=vvWPwz-PlZEwjOOIKqoZzA) format(truetype);
 }
 
-body{
-    font:normal normal normal 12px arial;
-    background:#555;
+body {
+	font: normal normal normal 12px arial;
+	background: #555;
 }
 
-h1{
-    font:normal normal normal 34px arvo;
-    background: dodgerblue;
-    padding:4px;
-    border-radius:10px;
+h1 {
+	font: normal normal normal 34px arvo;
+	background: #1E90FF;
+	padding: 4px;
+	border-radius: 10px;
 }
 
-h1 .title{
-    
+h1 .title {
 }
 
-h1 .subtitle{
-    font-size:28px;
-    color:white;
+h1 .subtitle {
+	font-size: 28px;
+	color: #FFF;
 }
 
-nav{
-    background:cadetblue;
-    padding:5px;
-    font:normal normal normal 18px arvo;
-    border-radius:10px;
+nav {
+	background: #5F9EA0;
+	padding: 5px;
+	font: normal normal normal 18px arvo;
+	border-radius: 10px;
 }
 
-a{
-    color:black;
-    background:lightgrey;
-    display:block;
-    padding:10px 15px;
-    margin:2px;
-    text-decoration:none;
-    border-top:1px solid #eee;
-    border-bottom:1px solid gray;
-    border-radius:10px;
+a {
+	color: #000;
+	background: #D3D3D3;
+	display: block;
+	padding: 10px 15px;
+	margin: 2px;
+	text-decoration: none;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid gray;
+	border-radius: 10px;
 }
 
-a:hover{
-    color:white;
-    background:cornflowerblue;
+a:hover {
+	color: #FFF;
+	background: #6495ED;
 }
 
-footer{
-    margin:40px 0 0 0;
-    background:black;
-    color:gray;
-    padding:10px;
-    border-radius:10px;
-    font-size:11px;
+footer {
+	margin: 40px 0 0;
+	background: #000;
+	color: gray;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 11px;
 }
 
-footer div:first-child{
-    color:yellow;
-    font:normal normal normal 14px arvo;
+footer div:first-child {
+	color: #FF0;
+	font: normal normal normal 14px arvo;
 }
 
-footer a{
-    padding:0 2px;
-    margin:0;
-    border:none;
-    background:none;
-    display:inline;
-    color:#eee;
+footer a {
+	padding: 0 2px;
+	margin: 0;
+	border: none;
+	background: none;
+	display: inline;
+	color: #eee;
 }
 
-.codeBox{
-    background:black;
-    color:yellow;
-    border:none;
-    border-radius:10px;
-    padding:10px;
-    margin: 3px 0;
+.codeBox {
+	background: #000;
+	color: #FF0;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 3px 0;
 }
 
-.code{
-    width:100%;
-    background:black;
-    color:yellow;
-    border:none;
+.code {
+	width: 100%;
+	background: #000;
+	color: #FF0;
+	border: none;
+}
+
+#codePlace {
+	box-sizing: border-box;
+	resize: none;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+}
+
+#runCode {
+	padding: 0 0 10px;
+	-webkit-box-sizing: border-box;
+	width: 10em;
+	height: 2em;
+}
+
+#jscode div p,#jscode div #runCode {
+	margin-left: 10px;
+	display: inline;
+	padding: 2px 0 3px;
 }

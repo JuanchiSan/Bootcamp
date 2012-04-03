@@ -3,7 +3,7 @@ $("#mypage").on('pageinit', function(){
 });
 $("#boton").click(function(){   
     $.mobile.showPageLoadingMsg();
-    $.post("/app/api/dispatcher.php",{ 
+    $.post("../api/dispatcher.php",{ 
             service: 'welcome.hello',
             params: {"name": ""+$("#alias").val()+""}},
             function(data){$("#respuesta").html(data);

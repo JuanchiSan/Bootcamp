@@ -5,116 +5,113 @@
     Description:
         CSS3 playground
 */
-@media screen and (min-width: 1200px) {
-    article #text
-    {
-            -moz-column-count: 4;
-            -moz-column-gap: 20px;
-            -webkit-column-count: 4;
-            -webkit-column-gap: 20px;
-            column-count: 4;
-            column-gap: 20px;
-            text-align: justify;
-    }
-    hgroup
-    {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-        text-align: center;
-    }
-    article img
-    {
-            width: 80%;
-            alignment-adjust: central; 
-    }
-}
-@media screen and (min-width: 800px) and (max-width: 1200px) {
-    article #text
-    {
-            -moz-column-count: 3;
-            -moz-column-gap: 20px;
-            -webkit-column-count: 3;
-            -webkit-column-gap: 20px;
-            column-count: 3;
-            column-gap: 20px;
-            text-align: justify;
-    }
-    hgroup
-    {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-        text-align: center;
-    }
+@media screen and min-width 1200px {
+	article #text {
+		-moz-column-count: 4;
+		-moz-column-gap: 20px;
+		-webkit-column-count: 4;
+		-webkit-column-gap: 20px;
+		column-count: 4;
+		column-gap: 20px;
+		text-align: justify;
+	}
+	
+	hgroup {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+		text-align: center;
+	}
+	
+	article img {
+		width: 80%;
+		alignment-adjust: central;
+	}
 
-    article img
-    {
-            width: 40%;
-            alignment-adjust: central; 
-    }
-}
-@media screen and (max-width: 800px) {
-
-    article #text
-    {
-        text-align: justify;
-    }
-    hgroup
-    {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-        text-align: center;
-    }
-    article img
-    {
-        width: 0%;
-    }
-}
-footer
-{
-    text-align: center;
-}
-header h1
-{
-    text-align: center;
-    font: 30px Georgia, Times, serif; 
-    text-transform: uppercase; 
-}
-#navbar 
-{
-    height: 2.4em;
-    padding: 0 0 0 215px;
-    border-top: 2px solid #333;
-    border-bottom: 1px solid #333;
-    font: 18px Georgia, Times, serif; 
-    overflow: hidden;
-    min-width: 750px;
 }
 
-#navbar li 
-{
-    float: left; 
-    padding: 0 23px 0 13px; 
-    margin-right: 5px;
+@media screen and min-width 800px and max-width 1200px {
+	article #text {
+		-moz-column-count: 3;
+		-moz-column-gap: 20px;
+		-webkit-column-count: 3;
+		-webkit-column-gap: 20px;
+		column-count: 3;
+		column-gap: 20px;
+		text-align: justify;
+	}
+	
+	hgroup {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+		text-align: center;
+	}
+	
+	article img {
+		width: 40%;
+		alignment-adjust: central;
+	}
+
 }
 
-#navbar li a 
-{
-    display: block; 
-    padding: 0 0 0.25em;
-    text-transform: uppercase; 
-    color: #000;
+@media screen and max-width 800px {
+	article #text {
+		text-align: justify;
+	}
+	
+	hgroup {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+		text-align: center;
+	}
+	
+	article img {
+		width: 0;
+	}
+
 }
 
-#navbar 
-{
-    background: none;
+footer {
+	text-align: center;
 }
-img
-{
-    display: block;   
-    margin-left: auto;   
-    margin-right: auto; 
+
+header h1 {
+	text-align: center;
+	font: 30px Georgia, Times, serif;
+	text-transform: uppercase;
+}
+
+#navbar {
+	height: 2.4em;
+	padding: 0 0 0 215px;
+	border-top: 2px solid #333;
+	border-bottom: 1px solid #333;
+	font: 18px Georgia, Times, serif;
+	overflow: hidden;
+	min-width: 750px;
+}
+
+#navbar li {
+	float: left;
+	padding: 0 23px 0 13px;
+	margin-right: 5px;
+}
+
+#navbar li a {
+	display: block;
+	padding: 0 0 .25em;
+	text-transform: uppercase;
+	color: #000;
+}
+
+#navbar {
+	background: none;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
